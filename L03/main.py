@@ -21,8 +21,9 @@ y = dataset.iloc[:,-1].values                                       #'y' armazen
 
 img = np.reshape(x[0,:],(35,35))
 
-img2 = cv.imread("./data/base/im-2_0.jpg",0)
-print(cv.HuMoments(cv.moments(img.astype("uint8")*255)))
+huMoments = cv.HuMoments(cv.moments(img.astype("uint8")*255))
+print(huMoments)
+print(huMoments.shape)
 
 #cv.imshow("image", img.astype("uint8")*255)
 #cv.waitKey()
