@@ -11,9 +11,6 @@ import pandas as pd
 dataset = pd.read_csv("dataset.txt", sep = ' ', header = None)
 #dataset.head()
 
-
-#.iloc é utilizado para separar a ultima coluna de 'dataset' do restante.
-
 x = dataset.iloc[:,:-1].values                                      #'x' armazenará os dados de cada imagem
 y = dataset.iloc[:,-1].values                                       #'y' armazenará a ultima coluna, que contem os numeros referentes a cada imagem
 
